@@ -1,4 +1,4 @@
-import {useCallback, useState, createContext } from "react";
+import { useCallback, useState, createContext } from "react";
 import axios from "axios";
 import App from "../App";
 
@@ -10,10 +10,20 @@ function Provider() {
   const fetchBooks = useCallback(async () => {
     const response = await axios.get("http://localhost:3001/books");
     setBooks(response.data);
-  },[]);
+  }, []);
   const createBook = async (title) => {
+    const imageResponse = await axios.get(
+      "https://api.unsplash.com/photos/random",
+      {
+        params: {
+          query: title,
+          client_id: "y9WREbQKMtOegwxiTbK99aWFNu4QrQh0mC2UFpQc6BU",
+        },
+      }
+    );
     const response = await axios.post("http://localhost:3001/books", {
-      title,
+      title:title,
+      image:imageResponse.data.urls.small,
     });
     // const updatedBooks = [
     //   ...books,
@@ -24,7 +34,6 @@ function Provider() {
   };
 
   const deleteBook = async (id) => {
-  
     await axios.delete(`http://localhost:3001/books/${id}`);
     const updatedBooks = books.filter((book) => {
       return book.id !== id;

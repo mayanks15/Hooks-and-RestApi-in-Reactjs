@@ -17,7 +17,11 @@ function BookShow({ book }) {
   }
   return (
     <div className="book-show">
-      <img src={`https://picsum.photos/seed/${book.id}/300/200`} alt="books" />
+      <img
+        src={book.image}
+        alt="books"
+        style={{ objectFit: "cover", height: "200px" }}
+      />
       <div>{content}</div>
       <div className="actions">
         <button className="delete" onClick={handleDelete}>

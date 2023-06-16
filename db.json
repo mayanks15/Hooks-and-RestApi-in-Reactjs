@@ -6,11 +6,6 @@
       "id": 1
     },
     {
-      "title": "harry potter",
-      "image": "https://images.unsplash.com/photo-1583997052301-0042b33fc598?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0MzA0NTV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODY5MTcwNjF8&ixlib=rb-4.0.3&q=80&w=400",
-      "id": 2
-    },
-    {
       "title": "Atomic Habits",
       "image": "https://images.unsplash.com/photo-1664399399246-3d5d5905ea34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0MzA0NTV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODY5MTcwNzJ8&ixlib=rb-4.0.3&q=80&w=400",
       "id": 3
@@ -34,6 +29,11 @@
       "title": "Computer",
       "image": "https://images.unsplash.com/photo-1590858078095-24c472408dfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0MzA0NTV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODY5MTcxMTZ8&ixlib=rb-4.0.3&q=80&w=400",
       "id": 7
+    },
+    {
+      "title": "harry potter",
+      "image": "https://images.unsplash.com/photo-1548630826-2ec01a41f48f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0MzA0NTV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODY5MTgzODV8&ixlib=rb-4.0.3&q=80&w=400",
+      "id": 8
     }
   ]
 }

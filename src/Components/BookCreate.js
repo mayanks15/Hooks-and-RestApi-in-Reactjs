@@ -22,7 +22,7 @@ function BookCreate() {
         <input
           className="input"
           type="text"
-          placeholder="Add more..."
+          placeholder="Type here..."
           value={title}
           onChange={handle}
         />
